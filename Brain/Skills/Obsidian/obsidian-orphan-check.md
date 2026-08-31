@@ -28,7 +28,7 @@ Prüfung 2 scheitern — z.B. wenn sie nur aus einer Tagesdatei heraus verlinkt 
 
 **Sonderfall `Daily/`:** Tagesdateien liegen in Monatsordnern und gelten als eingetragen, wenn sie
 in der Index-Tabelle **ihres Monats-Hubs** (`Daily/YYYY-MM/_YYYY-MM.md`) stehen. Die Monats-Hubs
-selbst müssen in `Daily/_Daily.md` verlinkt sein (normale Unter-Hub-Prüfung).
+selbst müssen in `Daily/_DAILY.md` verlinkt sein (normale Unter-Hub-Prüfung).
 
 ### Der sparsame Weg: ein lokaler Graph-Scan
 

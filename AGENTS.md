@@ -17,9 +17,9 @@ steht in `Brain/Me.md`.
 | Frage | Ziel |
 |---|---|
 | Was ist X für ein Projekt? | `Projects/_PROJECTS.md` |
-| Warum wurde X so gemacht? | `Decisions/_Decisions.md` |
+| Warum wurde X so gemacht? | `Decisions/_DECISIONS.md` |
 | Wie mache ich X? | `Skills/_SKILLS.md` — **erst den Skill lesen, dann handeln** |
-| Was war zuletzt? | `Daily/_Daily.md` → Monats-Hub → Tagesdatei |
+| Was war zuletzt? | `Daily/_DAILY.md` → Monats-Hub → Tagesdatei |
 | Was ist X für ein Fremdsystem? | `Knowledge/_KNOWLEDGE.md` |
 | Wie ist X eingerichtet? | `Setups/_SETUPS.md` |
 

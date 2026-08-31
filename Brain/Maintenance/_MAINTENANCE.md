@@ -7,7 +7,7 @@ created: 2026-01-01
 > Automatisch erzeugte Reports der Wartungs-Skills. Sie werden bei jedem Lauf **komplett
 > überschrieben** — hier steht immer nur der letzte Stand, die Historie liefert Git.
 
-> ℹ️ Diese Hub-Datei indiziert **nur report-erzeugende** Wartungs-Skills. Skills ohne Report (`obsidian-brain-update`, `obsidian-daily-commit-push`, `obsidian-hub-anlegen`, `obsidian-project-split`, …) stehen im Skill-Hub [[Skills/Obsidian/_Obsidian]].
+> ℹ️ Diese Hub-Datei indiziert **nur report-erzeugende** Wartungs-Skills. Skills ohne Report (`obsidian-brain-update`, `obsidian-daily-commit-push`, `obsidian-hub-anlegen`, `obsidian-project-split`, …) stehen im Skill-Hub [[Skills/Obsidian/_OBSIDIAN]].
 
 > 📄 Namenskonvention: Jede Report-Datei heißt `<skill-thema>-report.md` — also `orphan-check-report.md`, nicht `orphan-check.md`. Der Dateiname sagt damit selbst, dass er das **Ergebnis** ist und nicht die Anleitung (die heißt `obsidian-<thema>` in `Skills/Obsidian/`).
 

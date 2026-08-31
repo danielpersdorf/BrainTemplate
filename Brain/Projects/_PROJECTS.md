@@ -42,5 +42,5 @@ Was beim nächsten Mal Zeit spart — Fallstricke, gemessene Werte, Diagnose-Sig
 Chronologie. Wächst dieser Abschnitt, wandert er in eine eigene Teildatei.
 ```
 
-Entscheidungen mit Begründung gehören nicht hierher, sondern nach [[Decisions/_Decisions]] —
+Entscheidungen mit Begründung gehören nicht hierher, sondern nach [[Decisions/_DECISIONS]] —
 die **Kurzfassung** der Regel bleibt aber hier stehen.

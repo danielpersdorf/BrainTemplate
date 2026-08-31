@@ -13,7 +13,7 @@ Wenn der Nutzer sagt *„verschiebe die TODOs auf morgen"* (typisch abends) oder
 
 ## Ablauf
 
-1. **Die Konventionen von [[obsidian-daily-note]] gelten** (Pfad `Daily/YYYY-MM/YYYY-MM-DD.md`, Template, kein Datums-Titel, keine Wikilinks, Themen als H1 mit `---` dazwischen, Einzeleinträge als H2). Datum vorher messen. Bei Monatswechsel: Monatsordner + Monats-Hub anlegen und in `_Daily.md` verlinken.
+1. **Die Konventionen von [[obsidian-daily-note]] gelten** (Pfad `Daily/YYYY-MM/YYYY-MM-DD.md`, Template, kein Datums-Titel, keine Wikilinks, Themen als H1 mit `---` dazwischen, Einzeleinträge als H2). Datum vorher messen. Bei Monatswechsel: Monatsordner + Monats-Hub anlegen und in `_DAILY.md` verlinken.
 
 2. **Quelle lesen:** die jüngste Tagesdatei mit offenen `- [ ]`-Punkten im TODO-Abschnitt.
 

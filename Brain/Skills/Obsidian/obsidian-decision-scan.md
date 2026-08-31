@@ -131,7 +131,7 @@ Pro bestätigtem Fund:
 1. **Zielort wählen** — bestehende `PROJEKT_decisions.md` bevorzugen; neue Datei nur, wenn keine passt (Frontmatter mit `tags`, `created`, `projekt`)
 2. **Abschnitt in der Decisions-Datei anlegen:** Regel, Begründung, verworfene Alternative, Vorfall/Beleg, Datum in der Überschrift (`## Thema (YYYY-MM-DD)`)
 3. **Quelle kürzen, nicht leeren:** Überschrift bleibt, die Regel bleibt in Kurzform, der Verweis `→ [[…_decisions]]` kommt dazu. **Test:** *Könnte jemand allein mit dem Hub-Text die Regel korrekt befolgen?* Nein → zu kurz gekürzt.
-4. **Hub `_Decisions.md`** — neue Datei alphabetisch einsortieren, bei erweiterten Dateien die Beschreibungsspalte nachziehen
+4. **Hub `_DECISIONS.md`** — neue Datei alphabetisch einsortieren, bei erweiterten Dateien die Beschreibungsspalte nachziehen
 5. **Nachscan** mit [[obsidian-broken-links-report]] — Umzüge erzeugen neue Wikilinks
 
 ⚠️ Bei Abschnitts-Anchors (`[[Datei#Überschrift]]`) die Zielüberschrift **zeichengenau** gegenprüfen —

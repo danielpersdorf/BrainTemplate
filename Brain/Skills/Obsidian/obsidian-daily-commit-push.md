@@ -81,7 +81,7 @@ git -C $vault add -A
 
 > Das ist die **einzige** Stelle, an der ein pauschales `add -A` im Vault richtig ist: der
 > Sammel-Commit soll bewusst alles mitnehmen. Bei jedem Zwischen-Commit während der Arbeit gilt das
-> Gegenteil — dort nur die eigenen Zieldateien einzeln stagen (→ [[_Obsidian]]).
+> Gegenteil — dort nur die eigenen Zieldateien einzeln stagen (→ [[_OBSIDIAN]]).
 
 ## Schritt 6 — Commit-Nachricht
 
@@ -92,7 +92,7 @@ Format `brain: <kurze Beschreibung>`, z.B.:
 - `brain: 3 Notizen bearbeitet (Projects, Decisions, Daily)`
 
 ⚠️ Nachricht in eine Datei schreiben und `git commit -F` nehmen, nicht `-m` mit Here-String — und
-die Nachrichtendatei **ohne BOM** schreiben. → [[_Obsidian]]
+die Nachrichtendatei **ohne BOM** schreiben. → [[_OBSIDIAN]]
 
 ## Schritt 7 — Commit und Push
 

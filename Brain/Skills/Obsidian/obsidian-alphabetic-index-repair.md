@@ -24,7 +24,7 @@ Dateien referenzieren (Wikilink am Zeilenanfang bzw. in der ersten Spalte).
 
 | Datei / Abschnitt | Regel |
 |---|---|
-| `Daily/_Daily.md` und die Monats-Hubs `Daily/YYYY-MM/_YYYY-MM.md` | Absteigend chronologisch (neuester oben) — **diese** Reihenfolge prüfen |
+| `Daily/_DAILY.md` und die Monats-Hubs `Daily/YYYY-MM/_YYYY-MM.md` | Absteigend chronologisch (neuester oben) — **diese** Reihenfolge prüfen |
 | `_INDEX.md`, Abschnitt „Wiederkehrende Patterns & Entscheidungen" | Thematische Prosa-Liste, keine Datei-Referenzliste — überspringen |
 | `_PLANS.md` | Tabellen sind nach Status gruppiert — innerhalb jeder Tabelle alphabetisch prüfen |
 | Hubs mit fester Prozess-Reihenfolge (Stufe 1 → 2 → 3) | komplett überspringen — die Reihenfolge ist Inhalt |
@@ -72,7 +72,7 @@ Fehlender Konventions-Hinweis: 1
 Geplante Änderungen:
   ~ Setups/_SETUPS.md     → Tabelle „Einträge" neu sortieren (4 Zeilen verschieben)
   ~ Projects/_PROJECTS.md → Abschnitt neu sortieren
-  + People/_People.md     → Konventions-Hinweis ergänzen
+  + People/_PEOPLE.md     → Konventions-Hinweis ergänzen
 
 Fortfahren? (ja/nein)
 ```
@@ -151,7 +151,7 @@ Fehler: N
 - Frontmatter und Prosa-Abschnitte der Hub-Dateien nicht anfassen
 - Erst Dry Run, dann Bestätigung (außer im Routine-Lauf)
 - Nach jedem Schreibvorgang die Zeilen-Vollständigkeit mengenmäßig verifizieren
-- `Daily/_Daily.md` und die Monats-Hubs: chronologisch absteigend prüfen, nicht alphabetisch
+- `Daily/_DAILY.md` und die Monats-Hubs: chronologisch absteigend prüfen, nicht alphabetisch
 
 ---
 

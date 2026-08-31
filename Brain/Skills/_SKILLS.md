@@ -9,7 +9,7 @@ created: 2026-01-01
 
 > 🔤 Konvention: Listen-Einträge in dieser Datei immer alphabetisch sortieren — neue Einträge an der korrekten Position einfügen, nicht unten anhängen.
 
-> ↔️ Abgrenzung: Fakten über ein Fremdsystem → [[Knowledge/_KNOWLEDGE]]. Eine Entscheidung mit Begründung → [[Decisions/_Decisions]]. Ein Ablauf → hierher.
+> ↔️ Abgrenzung: Fakten über ein Fremdsystem → [[Knowledge/_KNOWLEDGE]]. Eine Entscheidung mit Begründung → [[Decisions/_DECISIONS]]. Ein Ablauf → hierher.
 
 > 📄 **Skills werden nie gekürzt oder gesplittet.** Sie werden als Ganzes gelesen oder installiert und müssen self-contained bleiben.
 
@@ -17,7 +17,7 @@ created: 2026-01-01
 
 | Skill | Wann verwenden |
 |---|---|
-| [[Skills/Obsidian/_Obsidian]] | Vault-Pflege: Tageseinträge, Maintenance-Läufe, Commit-Routine, Struktur-Reparaturen |
+| [[Skills/Obsidian/_OBSIDIAN]] | Vault-Pflege: Tageseinträge, Maintenance-Läufe, Commit-Routine, Struktur-Reparaturen |
 
 ## Aufbau einer Skill-Datei
 

@@ -57,7 +57,7 @@ Für jede Datei in Plans/ (außer Archiv/):
   → Abgearbeitet, aber nicht im Archiv → Archiv-Kandidat melden
 ```
 
-Verschieben nur nach Bestätigung → [[Plans/Archiv/_Archiv]].
+Verschieben nur nach Bestätigung → [[Plans/Archiv/_ARCHIV]].
 
 ### 3. Split-Kandidaten: zu große Projektdateien
 

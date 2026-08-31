@@ -7,7 +7,7 @@ created: 2026-01-01
 > Pläne und Checklisten für neue Features und Rollouts. Pläne entstehen **vor** der Umsetzung und
 > werden während der Klärungsphase iteriert.
 >
-> 🗄️ Abgeschlossene und abgelöste Pläne wandern ins Archiv → [[Plans/Archiv/_Archiv]].
+> 🗄️ Abgeschlossene und abgelöste Pläne wandern ins Archiv → [[Plans/Archiv/_ARCHIV]].
 
 > 🔤 Konvention: Listen-Einträge in dieser Datei immer alphabetisch sortieren — neue Einträge an der korrekten Position einfügen, nicht unten anhängen.
 
@@ -36,4 +36,4 @@ nächste Nachziehen ersatzlos. Neues Wissen gehört in eine Datei ohne Zwilling 
 
 ## Abgeschlossene Pläne
 
-→ [[Plans/Archiv/_Archiv]]
+→ [[Plans/Archiv/_ARCHIV]]

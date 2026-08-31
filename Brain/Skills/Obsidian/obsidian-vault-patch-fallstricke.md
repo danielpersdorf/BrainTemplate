@@ -6,7 +6,7 @@ created: 2026-01-01
 
 Stolperfallen beim **Schreiben in den Vault** — Klassen von Fehlern, die alle dieselbe Eigenschaft
 haben: nichts schlägt fehl, und der Schaden fällt erst Tage später auf. Vor einer Serie von
-Vault-Schreibvorgängen mitlesen. Ergänzt [[_Obsidian]], Abschnitt „Werkzeug-Fallen".
+Vault-Schreibvorgängen mitlesen. Ergänzt [[_OBSIDIAN]], Abschnitt „Werkzeug-Fallen".
 
 Die Beispiele beziehen sich auf ein Patch-Werkzeug mit Abschnitts-Zielen (`heading`, `frontmatter`),
 wie es die Obsidian-REST-API bietet. Die Fehlerklassen gelten aber für jedes Werkzeug, das

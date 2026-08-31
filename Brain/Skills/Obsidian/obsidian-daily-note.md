@@ -17,8 +17,8 @@ Brain/Daily/YYYY-MM/YYYY-MM-DD.md
 ```
 
 Die Tagesdatei liegt im **Monatsordner**. Existiert der noch nicht (Monatswechsel), Ordner anlegen,
-darin einen Monats-Hub `_YYYY-MM.md` nach der Vorlage in [[Daily/_Daily]] erstellen und diesen oben
-in `_Daily.md` verlinken.
+darin einen Monats-Hub `_YYYY-MM.md` nach der Vorlage in [[Daily/_DAILY]] erstellen und diesen oben
+in `_DAILY.md` verlinken.
 
 **Niemals** woanders ablegen — nicht im Vault-Root, nicht direkt in `Brain/`.
 
@@ -111,7 +111,7 @@ Falsch wäre dieselbe Datei als vier `#`-Überschriften mit Trennlinien dazwisch
 ### 4. Monats-Hub aktualisieren
 
 Nach dem Schreiben den **Monats-Hub** `Brain/Daily/YYYY-MM/_YYYY-MM.md` aktualisieren
-(nicht `_Daily.md` — dort stehen nur die Monats-Hubs). Neue Zeile **oben** in der Index-Tabelle
+(nicht `_DAILY.md` — dort stehen nur die Monats-Hubs). Neue Zeile **oben** in der Index-Tabelle
 (absteigend chronologisch):
 
 ```markdown

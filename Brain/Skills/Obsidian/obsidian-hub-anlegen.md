@@ -22,9 +22,14 @@ Verwandt: [[obsidian-alphabetic-index-repair]] (prüft und repariert bestehende 
 
 ## Namenskonvention
 
-- Dateiname: `_` + Verzeichnisname, z.B. `Projects/WebApp/_WebApp.md`
-- Groß-/Kleinschreibung folgt dem Bestand: Top-Level-Hubs in CAPS (`_PROJECTS`, `_SKILLS`, `_SETUPS`), Unter-Hubs PascalCase wie das Verzeichnis (`_WebApp`, `_Obsidian`)
+- Dateiname: `_` + Verzeichnisname
+- **Hubs der festen Bereichsstruktur schreiben den Namen in Großbuchstaben** — `_PROJECTS`, `_SKILLS`, `_DAILY`, `_DECISIONS`, `_PEOPLE`. Das gilt **auch für deren Unterordner**: `Plans/Archiv/_ARCHIV.md`, `Skills/Obsidian/_OBSIDIAN.md`. Keine Ausnahme, keine Tiefen-Regel — wer zur mitgelieferten Struktur gehört, ist CAPS.
+- **Hubs von Ordnern, die du selbst für ein Projekt oder Thema anlegst, übernehmen den Verzeichnisnamen unverändert** — `Projects/WebApp/_WebApp.md`, `Projects/PartnerAPI/_PartnerAPI.md`. Ein Projektname in Großbuchstaben wäre unlesbar und würde ihn vom Repo-/Ordnernamen entkoppeln.
 - Das `_`-Präfix sorgt dafür, dass der Hub in Obsidian oben im Ordner steht und von den Wartungs-Skills als Meta-Datei erkannt wird
+
+> Die Trennlinie ist „mitgeliefert vs. selbst angelegt", nicht „oben vs. unten". Eine Regel nach
+> Verschachtelungstiefe hatte genau eine Ausnahme (`_ARCHIV` liegt unter `Plans/`) — und eine Regel
+> mit einer Ausnahme wird nicht befolgt, sondern nachgeschlagen.
 
 ---
 

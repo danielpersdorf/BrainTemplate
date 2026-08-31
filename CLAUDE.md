@@ -13,8 +13,8 @@ Immer Deutsch antworten, auch wenn Code auf Englisch ist.
 1. **Immer zuerst:** [[Brain/_INDEX]] lesen
 2. **Wer ist der Nutzer?** → [[Brain/Me]]
 3. **Projekt-Fragen** → `Brain/Projects/_PROJECTS.md` → relevanten Abschnitt lesen
-4. **„Warum wurde X so gemacht?"** → `Brain/Decisions/_Decisions.md`
-5. **„Was war zuletzt?"** → `Brain/Daily/_Daily.md` → Monats-Hub → Tagesdatei
+4. **„Warum wurde X so gemacht?"** → `Brain/Decisions/_DECISIONS.md`
+5. **„Was war zuletzt?"** → `Brain/Daily/_DAILY.md` → Monats-Hub → Tagesdatei
 6. **„Wie mache ich X?"** → `Brain/Skills/_SKILLS.md` — **erst den Skill lesen, dann handeln**, auch wenn die Aufgabe trivial wirkt
 7. **Unbekannte Begriffe** → Volltextsuche über den Vault
 8. **Maintenance-Flag:** Enthält die jüngste Tagesdatei eine `⚠ Maintenance`-Zeile, zu Session-Beginn kurz darauf hinweisen (welcher Report `action-required` ist). Ein `✅` davor heißt erledigt; **keine** Flag-Zeile heißt „alle Reports waren `ok`", nicht „wurde gekürzt".
@@ -47,7 +47,7 @@ besonders. Deshalb wörtlich: **vor jedem** Schreibvorgang, nicht einmal pro Ses
 
 - Neue Projektdatei → `Brain/Projects/PROJEKTNAME.md`
 - Neuer Skill → `Brain/Skills/SKILLNAME.md` + Zeile in `_SKILLS.md`
-- Neue Decision → `Brain/Decisions/PROJEKTNAME_decisions.md` + Eintrag in `_Decisions.md`
+- Neue Decision → `Brain/Decisions/PROJEKTNAME_decisions.md` + Eintrag in `_DECISIONS.md`
 - Neues Verzeichnis → immer mit Hub-Datei (`_Name.md`), siehe [[obsidian-hub-anlegen]]
 - **Jede neue Datei sofort im zuständigen Hub verlinken** (`_*.md` im selben Verzeichnis, sonst nächsthöherer Hub) — alphabetisch einsortiert, nicht angehängt. **Keine Datei ohne Hub-Eintrag.**
 - Wikilinks `[[Dateiname]]` aktiv setzen, um den Graph aufzubauen — **außer in Dailies** (dort nur Dateinamen als Klartext, siehe unten)
