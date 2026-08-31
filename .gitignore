@@ -1,0 +1,12 @@
+# Obsidian-Zustand (gerätespezifisch, nicht committen)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/graph.json
+.trash/
+
+# Credentials (niemals committen!)
+.git-credentials
+*.git-credentials
+*.credentials
+*.env
