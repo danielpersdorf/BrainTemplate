@@ -50,14 +50,20 @@ wird sofort in ihrem Hub verlinkt — **keine Datei ohne Hub-Eintrag**.
 > **[`Brain/Setups/Obsidian/obsidian-brain-setup-einfach.md`](Brain/Setups/Obsidian/obsidian-brain-setup-einfach.md)**.
 > Sie setzt keine Git-Kenntnisse voraus. Die Kurzfassung:
 
-1. Repo klonen und den Ordner in Obsidian als Vault öffnen (optional — alles funktioniert auch ohne Obsidian, es sind reine Markdown-Dateien).
-2. `Brain/Me.md` ausfüllen — das ist die einzige Datei, die von Anfang an Inhalt braucht.
-3. `CLAUDE.md` durchgehen und an die eigenen Gewohnheiten anpassen (Sprache, was der Agent eigenständig darf).
-4. Ein Git-Remote setzen und einmal pushen — die Historie ist bei jeder Kürzung das Sicherheitsnetz.
-5. Arbeiten. Der Agent legt Projekt-, Decision- und Daily-Dateien beim Arbeiten selbst an.
+1. **Repo klonen** und den Ordner in Obsidian als Vault öffnen (optional — alles funktioniert auch ohne Obsidian, es sind reine Markdown-Dateien).
+2. **Deinem Agenten Zugriff geben** — entweder über Obsidian direkt per MCP, oder schlicht auf das Verzeichnis.
+3. **Nichts weiter einstellen.** Der Agent liest beim Start die `CLAUDE.md` (bzw. `AGENTS.md`) und weiß damit schon, dass er ein Brain hat und zuerst `Brain/_INDEX.md` lesen muss.
+4. **`Brain/Me.md` ausfüllen** — die einzige Datei, die von Anfang an Inhalt braucht. Erzähl ihm einfach ein bisschen was über dich.
+5. **Arbeiten.** Der Agent legt Projekt-, Decision- und Daily-Dateien selbst an. Du musst ihm nur hin und wieder etwas sagen wie *„merk dir das im Brain"*, *„mach einen Daily-Eintrag"* oder *„geh mit mir die Checkliste durch"* — mit der Zeit lernt er, dass er ein Brain hat und was er wann wo automatisch ablegt. Genauso kannst du ihn bitten, einen Skill im Brain anzulegen oder Kontaktdaten aus einer Mail zu übernehmen.
 
-Optional, aber der eigentliche Gewinn: die Wartungs-Skills als tägliche/wöchentliche Routinen
-einplanen (siehe unten).
+Danach solltest du noch:
+
+- **`CLAUDE.md` durchgehen** und an die eigenen Gewohnheiten anpassen (Sprache, was der Agent eigenständig darf).
+
+Und du kannst noch:
+
+- **Ein eigenes Git-Remote setzen und einmal pushen** — die Historie ist bei jeder Kürzung das Sicherheitsnetz. (Deswegen solltest du das auch echt in Erwägung ziehen 😉)
+- **Die Wartungs-Skills als tägliche/wöchentliche Routinen einrichten** (siehe unten) — optional, aber der eigentliche Gewinn.
 
 ## Zugriffswege
 
