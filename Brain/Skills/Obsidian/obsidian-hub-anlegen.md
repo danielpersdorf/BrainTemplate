@@ -25,6 +25,7 @@ Verwandt: [[obsidian-alphabetic-index-repair]] (prüft und repariert bestehende 
 - Dateiname: `_` + Verzeichnisname
 - **Hubs der festen Bereichsstruktur schreiben den Namen in Großbuchstaben** — `_PROJECTS`, `_SKILLS`, `_DAILY`, `_DECISIONS`, `_PEOPLE`. Das gilt **auch für deren Unterordner**: `Plans/Archiv/_ARCHIV.md`, `Skills/Obsidian/_OBSIDIAN.md`. Keine Ausnahme, keine Tiefen-Regel — wer zur mitgelieferten Struktur gehört, ist CAPS.
 - **Hubs von Ordnern, die du selbst für ein Projekt oder Thema anlegst, übernehmen den Verzeichnisnamen unverändert** — `Projects/WebApp/_WebApp.md`, `Projects/PartnerAPI/_PartnerAPI.md`. Ein Projektname in Großbuchstaben wäre unlesbar und würde ihn vom Repo-/Ordnernamen entkoppeln.
+- **Ist der Name schon von einem anderen Hub belegt, bekommt der neue einen qualifizierenden Zusatz** — `Setups/Obsidian/_OBSIDIAN-SETUPS.md` neben `Skills/Obsidian/_OBSIDIAN.md`. Zwei gleichnamige Notizen machen jeden kurzen Wikilink mehrdeutig; der Zusatz nennt den übergeordneten Bereich und bleibt in der Schreibweise des Originals (CAPS bleibt CAPS).
 - Das `_`-Präfix sorgt dafür, dass der Hub in Obsidian oben im Ordner steht und von den Wartungs-Skills als Meta-Datei erkannt wird
 
 > Die Trennlinie ist „mitgeliefert vs. selbst angelegt", nicht „oben vs. unten". Eine Regel nach

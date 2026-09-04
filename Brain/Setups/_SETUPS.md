@@ -11,6 +11,12 @@ created: 2026-01-01
 
 > 📄 **Setups werden nie gekürzt oder gesplittet.** Sie müssen self-contained sein — sie gehen an Menschen oder an fremde Agenten, die die übrigen Brain-Dateien **nicht** haben. Bewusste Redundanz ist hier ein Feature, kein Fehler.
 
+## Gruppen
+
+| Gruppe | Hub |
+|---|---|
+| Obsidian / Second Brain | [[Setups/Obsidian/_OBSIDIAN-SETUPS]] |
+
 ## Einträge
 
 | Setup | Inhalt |

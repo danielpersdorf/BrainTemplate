@@ -34,6 +34,7 @@ BrainTemplate/
     ├── Projects/               ← eine Datei je Projekt
     ├── Prompts/                ← wiederverwendbare Prompts
     ├── Setups/                 ← Infrastruktur-Dokumentation
+    │   └── Obsidian/           ← Einrichtung des Vaults selbst (Setup-Anleitung)
     └── Skills/                 ← Abläufe („wie mache ich X")
         └── Obsidian/           ← die Wartungs-Skills des Vaults selbst
 ```
@@ -43,6 +44,11 @@ Jedes Verzeichnis hat eine `_`-Hub-Datei als Einstieg. Die Navigation ist bewuss
 wird sofort in ihrem Hub verlinkt — **keine Datei ohne Hub-Eintrag**.
 
 ## Loslegen
+
+> Wer es Schritt für Schritt mag — inklusive Obsidian-Installation, MCP-Anbindung an Claude und
+> optionalem eigenem Git-Repo — folgt der ausführlichen Anleitung im Vault selbst:
+> **[`Brain/Setups/Obsidian/obsidian-brain-setup-einfach.md`](Brain/Setups/Obsidian/obsidian-brain-setup-einfach.md)**.
+> Sie setzt keine Git-Kenntnisse voraus. Die Kurzfassung:
 
 1. Repo klonen und den Ordner in Obsidian als Vault öffnen (optional — alles funktioniert auch ohne Obsidian, es sind reine Markdown-Dateien).
 2. `Brain/Me.md` ausfüllen — das ist die einzige Datei, die von Anfang an Inhalt braucht.
@@ -61,7 +67,7 @@ Zusätzlich möglich:
 | Weg | Wozu |
 |---|---|
 | Datei-Tools (Read/Edit/Grep) | Standardweg, am billigsten, keine Zusatzinstallation |
-| Obsidian Local REST API + MCP | Backlinks, Frontmatter, Volltextsuche, Document Maps |
+| Obsidian Local REST API + MCP | Backlinks, Frontmatter, Volltextsuche, Document Maps — Einrichtung: [`Brain/Setups/Obsidian/obsidian-brain-setup-einfach.md`](Brain/Setups/Obsidian/obsidian-brain-setup-einfach.md) |
 
 Die Skills nennen beide Wege. Ohne MCP fallen nur die Backlink-basierten Abkürzungen weg — die
 Skills beschreiben für jeden davon den lokalen Ersatz.
