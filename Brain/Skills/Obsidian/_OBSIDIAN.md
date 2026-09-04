@@ -46,6 +46,7 @@ Vault-Schreibvorgängen mitlesen**.
 | [[obsidian-decision-scan]] | Findet verbindliche Regeln außerhalb von `Decisions/` — Report, Umzug nur nach Bestätigung |
 | [[obsidian-frontmatter-repair]] | Ergänzt fehlendes Frontmatter (`tags`, `created`) — nie überschreibend |
 | [[obsidian-hub-anlegen]] | Neue Hub-Datei/neues Verzeichnis nach Template anlegen |
+| [[obsidian-maintenance-flag-position]] | Wo das Maintenance-Flag im Kopf einer Tagesdatei steht, wenn dort schon ein Kürzungsvermerk liegt — Reihenfolge, Leerzeilen, Begründung |
 | [[obsidian-orphan-check]] | Findet Waisen (0 Backlinks) und Dateien ohne Hub-Eintrag — Reparatur nur nach Bestätigung |
 | [[obsidian-project-split]] | Teilt eine zu große Projektdatei in Hub + Teildateien — 1:1, nur nach Bestätigung |
 | [[obsidian-token-efficiency-analysis]] | Vermisst die Lese-Pfade, meldet Archiv-/Split-Kandidaten — Report-only |

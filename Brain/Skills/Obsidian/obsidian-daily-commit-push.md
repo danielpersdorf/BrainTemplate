@@ -25,7 +25,7 @@ Get-ChildItem "$vault\Brain\Maintenance" -Filter *.md |
 ```
 
 - **Keine Treffer** → nichts tun. Grüne Tage bleiben rauschfrei — kein „lief durch"-Eintrag, das steht im Report-Frontmatter.
-- **Mindestens ein `action-required`** → **eine** Zeile an den **Anfang der Tagesdatei des nächsten Arbeitstages** einfügen (direkt nach dem Frontmatter bzw. hinter einem Kürzungsvermerk, **vor** dem `# TODO`-Block):
+- **Mindestens ein `action-required`** → **eine** Zeile an den **Anfang der Tagesdatei des nächsten Arbeitstages** einfügen (direkt nach dem Frontmatter bzw. hinter einem Kürzungsvermerk, **vor** dem `# TODO`-Block). **Trägt die Datei bereits einen Kürzungsvermerk, bleibt der ganz oben stehen — das Flag kommt als eigener `>`-Block darunter, getrennt durch eine Leerzeile** (Begründung und die Leerzeilen-Regel: [[obsidian-maintenance-flag-position]]):
 
 ```markdown
 > ⚠ Maintenance YYYY-MM-DD: orphan-check action-required (2 fehlende Hub-Einträge) · token-efficiency action-required (1 Split-Kandidat) → siehe Maintenance/

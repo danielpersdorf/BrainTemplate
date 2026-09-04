@@ -92,6 +92,7 @@ Unter `Brain/Skills/Obsidian/` liegen Wartungs-Skills, die ihre Ergebnisse nach
 | `obsidian-project-split` | zu große Projektdatei in Hub + Teildateien aufteilen | ja (nur nach Bestätigung) |
 | `obsidian-hub-anlegen` | neue Hub-Datei nach Template | ja |
 | `obsidian-daily-commit-push` | Tages-Commit + Maintenance-Flag in die Daily | ja |
+| `obsidian-maintenance-flag-position` | wo das Maintenance-Flag im Kopf der Tagesdatei steht und warum | nein (Lesestoff) |
 | `obsidian-vault-patch-fallstricke` | Stolperfallen beim Schreiben in den Vault | nein (Lesestoff) |
 
 Ein Vorschlag für die Reihenfolge, wenn du sie als geplante Aufgaben einrichtest — erst die
