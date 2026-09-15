@@ -5,17 +5,17 @@ status: active
 ---
 # Skill: obsidian-daily-commit-push
 
-Täglicher Git-Commit des Vaults — und davor das **Maintenance-Flag** in die Tagesdatei, wenn ein
-Wartungslauf etwas Auffälliges gemeldet hat. Läuft als letzte Routine des Tages, nach den
+Täglicher Git-Commit des Vaults — und davor der **Maintenance-Befund** in die globale TODO-Liste,
+wenn ein Wartungslauf etwas Auffälliges gemeldet hat. Läuft als letzte Routine des Tages, nach den
 Maintenance-Skills, damit deren Reports mit im Commit landen.
 
 ---
 
 ## Schritt 0 — Datum messen
 
-Systemzeit abfragen. Das Flag trägt dieses Datum, und der Zieltag wird daraus abgeleitet.
+Systemzeit abfragen. Der Eintrag trägt dieses Datum.
 
-## Schritt 1 — Maintenance-Anomalie-Flag
+## Schritt 1 — Maintenance-Befunde in die TODO-Liste
 
 Alle Report-Dateien unter `Brain/Maintenance/` auf ihr `status`-Frontmatter prüfen:
 
@@ -25,28 +25,38 @@ Get-ChildItem "$vault\Brain\Maintenance" -Filter *.md |
 ```
 
 - **Keine Treffer** → nichts tun. Grüne Tage bleiben rauschfrei — kein „lief durch"-Eintrag, das steht im Report-Frontmatter.
-- **Mindestens ein `action-required`** → **eine** Zeile an den **Anfang der Tagesdatei des nächsten Arbeitstages** einfügen (direkt nach dem Frontmatter bzw. hinter einem Kürzungsvermerk, **vor** dem `# TODO`-Block). **Trägt die Datei bereits einen Kürzungsvermerk, bleibt der ganz oben stehen — das Flag kommt als eigener `>`-Block darunter, getrennt durch eine Leerzeile** (Begründung und die Leerzeilen-Regel: [[obsidian-maintenance-flag-position]]):
+- **Mindestens ein `action-required`** → **pro betroffenem Report ein eigener Punkt** unter `## Brain-Maintenance (BrainWork)`, dem ersten Block von `Brain/Daily/TODOs.md`. Steht dort nur der Platzhalter `_(Nichts offen.)_`, ersetzt der erste Punkt ihn.
 
 ```markdown
-> ⚠ Maintenance YYYY-MM-DD: orphan-check action-required (2 fehlende Hub-Einträge) · token-efficiency action-required (1 Split-Kandidat) → siehe Maintenance/
+## Brain-Maintenance (BrainWork)
+
+- [ ] **orphan-check YYYY-MM-DD** — 2 Dateien ohne Hub-Eintrag → `Maintenance/orphan-check-report.md`
+- [ ] **token-efficiency YYYY-MM-DD** — 1 Split-Kandidat → `Maintenance/token-efficiency-report.md`
 ```
 
-### Regeln für das Flag
+### Regeln für den Eintrag
 
+- **Ein Punkt pro Report, nicht pro Lauf.** Die Reports werden einzeln erledigt — ein gebündelter Punkt ließe sich nur ganz oder gar nicht abhaken, und Teilerledigung müsste in den Fließtext.
+- **Form: ein Satz plus Pfad**, wie für jeden TODO-Punkt ([[obsidian-todos-liste-pflegen]]) — fett der Report samt Laufdatum, dann der Kurzgrund, dann der Report-Pfad. Der Kontext lebt im Report, nicht im Punkt.
 - **Nur Anomalien melden, nie den Normalzustand** — es ist ein Aufmerksamkeits-Signal, kein Protokoll.
 - Kurzgrund aus dem jeweiligen Report ziehen (die Kopfzeile genügt).
-- **Das Flag bleibt dauerhaft in der Tagesdatei.** Es wird beim Kürzen durch den [[obsidian-daily-redundancy-check]] **nicht** weggelassen, nicht umformuliert und nicht gelöscht — nur ggf. von `⚠` auf `✅` umgeschrieben. **Eine fehlende Flag-Zeile heißt „grüner Tag", nie „wurde gekürzt".**
-- **Zieltag ist der nächste Arbeitstag, nicht wörtlich „morgen".** Der Freitagslauf schreibt in die Montags-Datei — eine Wochenenddatei wird nie geöffnet, das Flag wäre bis Montag unsichtbar. Feiertage und angekündigte Abwesenheiten genauso behandeln.
-  - **Wird ein übersprungener Tag doch zum Arbeitstag, wandert das Flag zurück in diesen Tag** — mitsamt der Notiz über seine Abarbeitung. Sonst steht der Befund im einen Tag und die Erledigung im anderen. Der Rest des ursprünglichen Zieltags bleibt unangetastet.
-- **Das Flag trägt das Datum seines Laufs, nicht das der Datei:** `> ⚠ Maintenance 2026-08-20: …` steht in `2026-08-21.md`. Der Text sagt, welcher Abendlauf den Befund erzeugt hat, die Datei sagt, wo er abgearbeitet wird. Ohne diese Trennung driften Flag-Datum und Dateiname stillschweigend auseinander.
-- Existiert die Tagesdatei des Zieltages noch nicht: minimale Datei nach [[obsidian-daily-note]] anlegen (`created` = Zieltag) und nur das Flag hineinschreiben. **Zeile im Monats-Hub nicht vergessen** — eine vorab angelegte Tagesdatei ohne Hub-Eintrag ist am Folgeabend ein Orphan-Check-Befund.
-- 🚫 **Niemals eine Tagesdatei für einen Nicht-Arbeitstag anlegen.** Eine Vorgängerfassung dieser Regel schrieb das Flag in „heute" und legte dafür notfalls eine Datei an — Ergebnis war ein Dutzend Tagesdateien, die nur ihr eigenes Flag enthielten. ⚠️ Die Kette **füttert sich dabei selbst**: jede so angelegte Datei ist am Folgeabend ein neuer Orphan-Check-Befund, weshalb derselbe Fund über eine Abwesenheit hinweg stetig wächst und Lauf um Lauf gemeldet wird.
-- **Trägt der Zieltag schon ein Flag aus einem früheren Lauf derselben Abwesenheit, die bestehende Zeile erweitern — keine zweite anhängen.** Bei längerer Abwesenheit zielt jeder Abendlauf auf **dieselbe** Datei; ein Zweiwochenurlaub erzeugt sonst zehn Flag-Zeilen im Rückkehrtag. Zielform ist **eine** Zeile über den Zeitraum: `> ⚠ Maintenance der Abendläufe YYYY-MM-DD bis YYYY-MM-DD: …`, je Befund einmal genannt, mit dem Verlauf statt einer Wiederholung („von 1 auf 8 angewachsen").
-- **Flag und Report müssen dasselbe sagen.** Ein Report, der im Flag steht, muss selbst `status: action-required` und den Fund tragen — das Flag wird aus dem Frontmatter abgeleitet, nie aus Wissen, das nur im Lauf vorliegt. Fällt beim Schreiben auf, dass ein Report nicht nachgezogen wurde: erst den Report schreiben, dann flaggen.
-- **Ein abgearbeitetes Flag wird umgeschrieben, nicht liegengelassen:**
-  `> ✅ Maintenance <Datum> (erledigt am <Datum>): <was war> — <was wurde getan>, Report `ok`.`
-  Sonst lesen sich Wochen später alte Tage wie offene Baustellen.
-  - ⚠️ **Beim Umschreiben die Backticks um zitierte Link-Ziele erhalten.** Nennt die Flag-Zeile ein kaputtes Wikilink-Ziel, steht es als Inline-Code da. Fallen die Backticks beim Umformulieren weg, erzeugt die *abgeschlossene* Tagesdatei beim nächsten Broken-Links-Lauf wieder eine Fundstelle, und der Befund sieht wie neu aus.
+- **Der Punkt trägt das Datum seines Laufs, nicht das des Eintragens.** Der Abendlauf schreibt sein eigenes Datum, auch wenn der Commit nach Mitternacht durchgeht. Ohne diese Trennung ist ein Befund später keinem Lauf mehr zuzuordnen.
+- **Meldet ein Report denselben Befund erneut, den bestehenden Punkt aktualisieren — keinen zweiten anlegen.** Ein unverändert offener Fund erzeugt sonst pro Abendlauf eine Zeile; nach einer Abwesenheit stehen zehn Zeilen für einen Befund. Zielform ist ein Punkt mit Verlauf: `— seit YYYY-MM-DD unverändert, dritter Lauf`.
+- **Punkt und Report müssen dasselbe sagen.** Ein Report, der in der Liste steht, muss selbst `status: action-required` und den Fund tragen — der Eintrag wird aus dem Frontmatter abgeleitet, nie aus Wissen, das nur im Lauf vorliegt. Fällt beim Eintragen auf, dass ein Report nicht nachgezogen wurde: erst den Report schreiben, dann eintragen.
+- **Erledigen nach den Regeln der TODO-Liste:** auf `- [x]` setzen mit Erledigungsdatum und einem Halbsatz, was getan wurde — nicht löschen. Ab dem sechsten erledigten Punkt der Gesamtliste wandern die ältesten ins Archiv ([[obsidian-todos-liste-pflegen]]).
+- ⚠️ **Backticks um zitierte Link-Ziele erhalten.** Nennt der Punkt ein kaputtes Wikilink-Ziel, steht es als Inline-Code (`` `[[Ziel]]` ``) — genau wie im Report selbst. Ohne Backticks erzeugt die TODO-Liste beim nächsten Broken-Links-Lauf selbst eine Fundstelle, und der Befund sieht wie neu aus. Die Falle ist hier **größer** als in einer Tagesdatei: `TODOs.md` wird dauerhaft gelesen, kein abgeschlossener Tag.
+- ⚠️ **`TODOs.md` ist eine geteilte Datei** — vor dem Schreiben `git pull` und den Zielabschnitt frisch lesen, nicht ans Dateiende hängen.
+
+> 💡 **Warum die TODO-Liste und nicht die Tagesdatei?** Ein Befund ist ein **Arbeitsauftrag**, und
+> Arbeitsaufträge gehören dorthin, wo alle anderen stehen. Schreibt man ihn in eine Tagesdatei, muss
+> die Regel erst dafür sorgen, dass es die Zieldatei überhaupt gibt: nächster Arbeitstag statt
+> „morgen", notfalls Tagesdatei anlegen, Monats-Hub-Zeile nachtragen, Flags einer Abwesenheit
+> bündeln. ⚠️ Daraus entsteht ein Fehlermodus, der sich **selbst füttert**: jede nur für ihren
+> Befund angelegte Tagesdatei ist am Folgeabend ein neuer Orphan-Check-Befund („Tagesdatei ohne
+> Hub-Eintrag"), weshalb derselbe Fund über eine Abwesenheit hinweg wächst und Lauf um Lauf gemeldet
+> wird. Mit `TODOs.md` fällt das alles weg — die Datei existiert immer und hat ihren Hub-Eintrag.
+> Die Positionsregel für den Daily-Kopf, falls ein Vault noch Bestand aus dem alten Modell trägt:
+> [[obsidian-maintenance-flag-position]].
 
 ## Schritt 2 — Pull
 
@@ -105,5 +115,5 @@ git -C $vault push origin main
 
 ## Abschluss-Ausgabe
 
-Commit-Hash und Nachricht · Push-Status · Anzahl geänderter Dateien · ob ein Maintenance-Flag
-gesetzt wurde.
+Commit-Hash und Nachricht · Push-Status · Anzahl geänderter Dateien · ob ein Maintenance-Punkt in
+`Daily/TODOs.md` eingetragen wurde (welcher Report, welcher Kurzgrund).

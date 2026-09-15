@@ -39,15 +39,15 @@ Vault-Schreibvorgängen mitlesen**.
 | [[obsidian-alphabetic-index-repair]] | Prüft und repariert die alphabetische Sortierung der Listen in allen Hub-Dateien (`_*.md`) |
 | [[obsidian-brain-update]] | Sessions des Tages auswerten und die relevanten Inhalte in die Tagesdatei schreiben |
 | [[obsidian-broken-links-report]] | Findet tote Wikilinks — Report, ändert nichts |
-| [[obsidian-daily-commit-push]] | Täglicher Git-Commit des Vaults inkl. Maintenance-Flag in der Tagesdatei |
+| [[obsidian-daily-commit-push]] | Täglicher Git-Commit des Vaults inkl. Maintenance-Befund in `Daily/TODOs.md` |
 | [[obsidian-daily-note]] | „schreib das in die daily" → Tageseintrag anlegen/ergänzen, Struktur und Monats-Hub |
 | [[obsidian-daily-redundancy-check]] | Prüft, ob das Wissen einer Tagesdatei im Brain abgelegt ist — extrahiert, dann kürzt |
-| [[obsidian-daily-todos-verschieben]] | Offene TODOs der jüngsten Tagesdatei auf den nächsten Arbeitstag übertragen |
 | [[obsidian-decision-scan]] | Findet verbindliche Regeln außerhalb von `Decisions/` — Report, Umzug nur nach Bestätigung |
 | [[obsidian-frontmatter-repair]] | Ergänzt fehlendes Frontmatter (`tags`, `created`) — nie überschreibend |
 | [[obsidian-hub-anlegen]] | Neue Hub-Datei/neues Verzeichnis nach Template anlegen |
-| [[obsidian-maintenance-flag-position]] | Wo das Maintenance-Flag im Kopf einer Tagesdatei steht, wenn dort schon ein Kürzungsvermerk liegt — Reihenfolge, Leerzeilen, Begründung |
+| [[obsidian-maintenance-flag-position]] | Wo ein Maintenance-Befund steht: als Punkt unter `## Brain-Maintenance (BrainWork)` in `Daily/TODOs.md` — dazu die Bestandsregel für Flags im Kopf einer Tagesdatei |
 | [[obsidian-orphan-check]] | Findet Waisen (0 Backlinks) und Dateien ohne Hub-Eintrag — Reparatur nur nach Bestätigung |
 | [[obsidian-project-split]] | Teilt eine zu große Projektdatei in Hub + Teildateien — 1:1, nur nach Bestätigung |
+| [[obsidian-todos-liste-pflegen]] | Offene Punkte aufnehmen, abhaken, archivieren — `Daily/TODOs.md` ist die einzige Quelle |
 | [[obsidian-token-efficiency-analysis]] | Vermisst die Lese-Pfade, meldet Archiv-/Split-Kandidaten — Report-only |
 | [[obsidian-vault-patch-fallstricke]] | Stolperfallen beim Schreiben in den Vault — vor einer Schreibserie lesen |

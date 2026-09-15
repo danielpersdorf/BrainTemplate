@@ -86,7 +86,7 @@ Unter `Brain/Skills/Obsidian/` liegen Wartungs-Skills, die ihre Ergebnisse nach
 | Skill | Was er tut | Ändert etwas? |
 |---|---|---|
 | `obsidian-daily-note` | Tageseintrag schreiben (Pfad, Struktur, Monats-Hub) | ja |
-| `obsidian-daily-todos-verschieben` | offene TODOs auf den nächsten Tag übertragen | ja |
+| `obsidian-todos-liste-pflegen` | offene Punkte in `Daily/TODOs.md` aufnehmen, abhaken, archivieren | ja |
 | `obsidian-brain-update` | Sessions auswerten und die Tagesdatei füllen | ja |
 | `obsidian-daily-redundancy-check` | Wissen aus Dailies in die Wissensbasis ziehen, dann kürzen | ja (mit Gate) |
 | `obsidian-frontmatter-repair` | fehlendes `tags`/`created` ergänzen | ja (nur additiv) |

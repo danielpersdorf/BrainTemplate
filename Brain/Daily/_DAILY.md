@@ -14,6 +14,8 @@ Index-Tabelle seiner Tage.
 
 > 📅 Konvention: Der Index hier ist absteigend chronologisch sortiert — neuester Monat immer oben.
 
+> ⛔ **Offene TODOs stehen nicht in den Tagesdateien, sondern gesammelt in [[TODOs]]** — sie werden nicht von Tag zu Tag weitergereicht. Eine Tagesdatei hält fest, was **passiert** ist; was noch **offen** ist, steht in der Liste. Ablauf: [[obsidian-todos-liste-pflegen]].
+
 ---
 
 ## Monate
